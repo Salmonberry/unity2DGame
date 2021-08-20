@@ -5,6 +5,7 @@ public class PlayerControler : MonoBehaviour
     public float speed = 5;
     private Rigidbody2D _rigidbody2D;
     public bool isJump;
+    public Vector2 PlayerVelocity { get; set; }
 
     [Header("Ground Check")] public LayerMask checkedType;
     public Transform detector;
@@ -20,6 +21,7 @@ public class PlayerControler : MonoBehaviour
 
     private void FixedUpdate()
     {
+        PlayerVelocity = _rigidbody2D.velocity;
         Run();
         Jump();
     }

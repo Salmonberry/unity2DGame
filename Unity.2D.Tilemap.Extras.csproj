@@ -264,6 +264,24 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>D:/Program Files/Unity/2019.4.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="antlr.runtimePlastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/antlr.runtimePlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Antlr3.RuntimePlastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/Antlr3.RuntimePlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="LibGit2SharpPlastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/LibGit2SharpPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json.Net20Plastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/Newtonsoft.Json.Net20Plastic.dll</HintPath>
+ </Reference>
+ <Reference Include="unityplastic">
+ <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/PackageCache/com.unity.plasticscm-cn@1.2.1-preview/Lib/Editor/unityplastic.dll</HintPath>
+ </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Program Files/Unity/2019.4.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
  </Reference>
