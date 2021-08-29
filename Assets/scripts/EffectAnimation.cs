@@ -11,7 +11,6 @@ public class EffectAnimation : MonoBehaviour
     private Vector3 _groundEffectAnimationPosition;
     private Vector3 _playerPosition;
     private Rigidbody2D _rigidbody2D;
-    private Animator _playerAnimator;
     private static readonly int FallSpeed = Animator.StringToHash("fallSpeed");
 
 
@@ -20,20 +19,12 @@ public class EffectAnimation : MonoBehaviour
     {
         _originalPosition = gameObject.transform.position;
         _playerControler = GetComponent<PlayerControler>();
-        _playerAnimator = _playerControler.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
         PlayJumpEffectAnimation();
-
-        Debug.Log("速度：" + _playerControler.PlayerVelocity);
-        Debug.Log("y轴速度：" + _playerControler.PlayerVelocity.y);
-        Debug.Log("x轴速度：" + _playerControler.PlayerVelocity.x);
-        Debug.Log(_playerAnimator.GetBool(FallSpeed));
-        
-        
     }
 
 

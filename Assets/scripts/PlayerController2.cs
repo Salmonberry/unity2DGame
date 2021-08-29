@@ -22,7 +22,7 @@ public class PlayerController2 : MonoBehaviour
         Jump();
     }
 
-    private void Run()
+    private void Run()                                                                                                      
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
 

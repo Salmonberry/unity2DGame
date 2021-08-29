@@ -58,12 +58,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\BombController.cs" />
      <Compile Include="Assets\scripts\EffectAnimation.cs" />
      <Compile Include="Assets\scripts\FallAnimationEffect.cs" />
      <Compile Include="Assets\scripts\JumpEffectController.cs" />
      <Compile Include="Assets\scripts\PlayerAnimation.cs" />
      <Compile Include="Assets\scripts\PlayerControler.cs" />
      <Compile Include="Assets\scripts\PlayerController2.cs" />
+     <Compile Include="Assets\scripts\PlayerTowards.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
