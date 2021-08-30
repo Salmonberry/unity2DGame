@@ -5435,6 +5435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolRadius: 0
   moveSpeed: 2
+  stoppingA: {fileID: 2019551871}
 --- !u!4 &953052295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8828752022035628858, guid: fa78f11a962b4964c8be02d2112b8fc3,
