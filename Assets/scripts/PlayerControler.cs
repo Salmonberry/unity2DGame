@@ -30,7 +30,6 @@ public class PlayerControler : MonoBehaviour
     private void Update()
     {
         ONAttack();
-        Debug.Log(Time.time);
     }
 
     private void FixedUpdate()
@@ -78,9 +77,8 @@ public class PlayerControler : MonoBehaviour
     private void ONAttack()
     {
         //技能开启时间
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log(Time.time);
             if (Time.time > _skillCooldownTime)
             {
                 GenerateBomb();
