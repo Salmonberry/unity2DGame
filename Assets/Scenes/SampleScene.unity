@@ -5501,6 +5501,7 @@ MonoBehaviour:
   - {fileID: 54301038}
   - {fileID: 419531018}
   detectEnemys: []
+  health: 0
 --- !u!50 &783986978
 Rigidbody2D:
   serializedVersion: 4

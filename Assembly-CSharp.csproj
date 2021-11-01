@@ -58,15 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\BombController.cs" />
-     <Compile Include="Assets\scripts\CucumberController.cs" />
-     <Compile Include="Assets\scripts\EffectAnimation.cs" />
-     <Compile Include="Assets\scripts\FallAnimationEffect.cs" />
-     <Compile Include="Assets\scripts\JumpEffectController.cs" />
-     <Compile Include="Assets\scripts\PlayerAnimation.cs" />
-     <Compile Include="Assets\scripts\PlayerControler.cs" />
-     <Compile Include="Assets\scripts\PlayerController2.cs" />
-     <Compile Include="Assets\scripts\PlayerTowards.cs" />
+     <Compile Include="Assets\scripts\Enemy\CucumberController.cs" />
+     <Compile Include="Assets\scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\scripts\Enemy\EnemyBaseState.cs" />
+     <Compile Include="Assets\scripts\Enemy\PatrolState.cs" />
+     <Compile Include="Assets\scripts\Player\BombController.cs" />
+     <Compile Include="Assets\scripts\Player\EffectAnimation.cs" />
+     <Compile Include="Assets\scripts\Player\FallAnimationEffect.cs" />
+     <Compile Include="Assets\scripts\Player\JumpEffectController.cs" />
+     <Compile Include="Assets\scripts\Player\PlayerAnimation.cs" />
+     <Compile Include="Assets\scripts\Player\PlayerControler.cs" />
+     <Compile Include="Assets\scripts\Player\PlayerController2.cs" />
+     <Compile Include="Assets\scripts\Player\PlayerTowards.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/WorkSpace/Code/Unity/2DGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
