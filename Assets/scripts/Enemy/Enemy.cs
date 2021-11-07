@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -9,22 +8,38 @@ public class Enemy : MonoBehaviour
     public Transform[] movePos;
     private int index;
     private Animator _animator;
-    [Header("checkout enemys")] public List<Transform> detectEnemys;
+    
+    [Header("checkout enemys")] 
+    public List<Transform> detectEnemys;
     private static readonly int HasWaite = Animator.StringToHash("hasWaite");
+
+    public PatrolState patrolState = new PatrolState();
+
+    private EnemyBaseState currentState;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         index = 0;
-
         _animator = GetComponent<Animator>();
+        TransitionToState(patrolState);
     }
 
     // Update is called once per frame
     void Update()
     {
         // PatrolAround();
-        PlayAnimation();
+        // PlayAnimation();
+        
+        currentState.OnUpdate(this);
+        
+    }
+
+    public void TransitionToState(EnemyBaseState state)
+    {
+        currentState = state;
+        currentState.EnterState(this);
     }
 
     public void PatrolAround()
