@@ -85,7 +85,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: animation_cucumber_idle
+  m_Name: idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -196,7 +196,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -246,10 +246,10 @@ AnimatorStateMachine:
     m_Position: {x: 320, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5402521926281761215}
-    m_Position: {x: 760, y: 540, z: 0}
+    m_Position: {x: 1090, y: 530, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2573962686691441562}
-    m_Position: {x: 780, y: 430, z: 0}
+    m_Position: {x: 1110, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2333766987809352338}
     m_Position: {x: 320, y: 300, z: 0}
@@ -258,22 +258,22 @@ AnimatorStateMachine:
     m_Position: {x: 470, y: 500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4352044367480809437}
-    m_Position: {x: 730, y: 350, z: 0}
+    m_Position: {x: 1060, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7180871605697821351}
-    m_Position: {x: 572.0202, y: -104.89899, z: 0}
+    m_Position: {x: 640, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2665067106164774558}
-    m_Position: {x: 622.7591, y: 89.49035, z: 0}
+    m_Position: {x: 960, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6496418822441411214}
-    m_Position: {x: 657.7591, y: 154.49036, z: 0}
+    m_Position: {x: 990, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8496932541047610348}
-    m_Position: {x: 692.7591, y: 219.49036, z: 0}
+    m_Position: {x: 1030, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5303249816801407417}
-    m_Position: {x: 727.7591, y: 284.49036, z: 0}
+    m_Position: {x: 1060, y: 280, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -281,7 +281,7 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 1130, y: 110, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -5806456658679417130}
 --- !u!1102 &2333766987809352338

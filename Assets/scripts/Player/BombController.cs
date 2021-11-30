@@ -1,7 +1,4 @@
-﻿
-using UnityEngine;
-
-
+﻿using UnityEngine;
 public class BombController : MonoBehaviour
 {
     [Header("delay time to bomb")] public float delayTime;

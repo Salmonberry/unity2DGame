@@ -5496,11 +5496,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  waitTime: 0.5
+  waitingTime: 2
   movePos:
   - {fileID: 54301038}
   - {fileID: 419531018}
-  detectEnemys: []
+  targetPoint: {fileID: 0}
+  animator: {fileID: 0}
+  animState: 0
+  attackList: []
   health: 0
 --- !u!50 &783986978
 Rigidbody2D:
