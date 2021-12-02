@@ -63,6 +63,7 @@
      <Compile Include="Assets\scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\scripts\Enemy\EnemyBaseState.cs" />
      <Compile Include="Assets\scripts\Enemy\PatrolState.cs" />
+     <Compile Include="Assets\scripts\Enemy\PointWithDistance.cs" />
      <Compile Include="Assets\scripts\Player\BombController.cs" />
      <Compile Include="Assets\scripts\Player\EffectAnimation.cs" />
      <Compile Include="Assets\scripts\Player\FallAnimationEffect.cs" />

@@ -70,34 +70,36 @@ public class Enemy : MonoBehaviour
 
     public void SwitchPoint()
     {
-        if (Mathf.Abs(movePos[0].position.x - transform.position.x) >
-            Mathf.Abs(movePos[1].position.x - transform.position.x))
-        {
-            index = 0;
-        }
-        else
-        {
-            index = 1;
-        }
+        // if (Mathf.Abs(movePos[0].position.x - transform.position.x) >
+        //     Mathf.Abs(movePos[1].position.x - transform.position.x))
+        // {
+        //     index = 0;
+        // }
+        // else
+        // {
+        //     index = 1;
+        // }
+
+        GetFarPoint(transform,movePos);
     }
 
     /// <summary>
     /// 获取数组中与怪物相距最远的点
     /// </summary>
     /// <returns></returns>
-    private float GetFarPoint()
+    private PointWithDistance GetFarPoint(Transform self,IReadOnlyList<Transform> points)
     {
-        var distanceList = new List<float>();
-        for (var i = 0; i < movePos.Length; i++)
+        var distanceList = new List<PointWithDistance>();
+        for (var i = 0; i < points.Count; i++)
         {
-            var point = movePos[index];
-            var map = new Dictionary<int, Transform>();
-            map.Add(i, point);
+            var point = points[index];
+            var distance = Math.Abs(self.position.x - point.position.x);
 
-            distanceList.Add(Math.Abs(transform.position.x - point.position.x));
+
+            distanceList.Add(new PointWithDistance(point, distance));
         }
 
-        distanceList.Sort();
+        distanceList.Sort((a, b) => a.Distance.CompareTo(b.Distance));
 
         return distanceList.Last();
     }
@@ -109,7 +111,7 @@ public class Enemy : MonoBehaviour
         FilpDirection();
     }
 
-    public void FilpDirection()
+    private void FilpDirection()
     {
         if (transform.position.x < targetPoint.position.x)
             transform.rotation = Quaternion.Euler(0f, 180f, 0f);
